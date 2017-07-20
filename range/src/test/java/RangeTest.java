@@ -55,7 +55,7 @@ public class RangeTest {
         assertTrue("Must True", actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     EndSign2Test() {
         MyRange range = new MyRange();
@@ -63,7 +63,7 @@ public class RangeTest {
         assertFalse("Must False", actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     EndNum1Test() {
         MyRange range = new MyRange();
