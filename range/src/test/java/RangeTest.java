@@ -31,7 +31,7 @@ public class RangeTest {
         assertEquals(1, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     FirstNum2Test() {
         MyRange range = new MyRange();
@@ -39,7 +39,7 @@ public class RangeTest {
         assertEquals(2, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     FirstNum3Test() {
         MyRange range = new MyRange();
