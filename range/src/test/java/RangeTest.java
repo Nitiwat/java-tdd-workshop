@@ -7,25 +7,25 @@ import static org.junit.Assert.assertTrue;
 
 public class RangeTest {
 
-    @Test @Ignore
+    @Test
     public void
-    ตรวจสอบว่าเป็น_ก้ามปูเปิด() {
+    FirstSign1Test() {
         MyRange range = new MyRange();
-        boolean actualResult = range.isก้ามปูเปิด("[1,5]");
-        assertTrue("ต้องเป็นก้ามปูเปิดนะ", actualResult);
+        boolean actualResult = range.FirstSign("[1,5]");
+        assertTrue("Must True", actualResult);
     }
 
     @Test @Ignore
     public void
-    ตรวจสอบว่าเป็น_วงเล็บเปิด() {
+    FirstSign2Test() {
         MyRange range = new MyRange();
-        boolean actualResult = range.isก้ามปูเปิด("(1,5]");
-        assertFalse("ต้องเป็นวงเล็บเปิดนะ", actualResult);
+        boolean actualResult = range.FirstSign("(1,5]");
+        assertFalse("Must False", actualResult);
     }
 
     @Test @Ignore
     public void
-    หาตัวเลขเริ่มต้น() {
+    FirstNum1Test() {
         MyRange range = new MyRange();
         int actualResult = range.getFirstNumber("[1,5]");
         assertEquals(1, actualResult);
@@ -33,7 +33,7 @@ public class RangeTest {
 
     @Test @Ignore
     public void
-    หาตัวเลขเริ่มต้น2() {
+    FirstNum2Test() {
         MyRange range = new MyRange();
         int actualResult = range.getFirstNumber("[2,5]");
         assertEquals(2, actualResult);
@@ -41,7 +41,7 @@ public class RangeTest {
 
     @Test @Ignore
     public void
-    หาตัวเลขเริ่มต้น3() {
+    FirstNum3Test() {
         MyRange range = new MyRange();
         int actualResult = range.getFirstNumber("(1,5]");
         assertEquals(2, actualResult);
@@ -49,23 +49,23 @@ public class RangeTest {
 
     @Test @Ignore
     public void
-    ตรวจสอบว่าเป็น_ก้ามปูปิด() {
+    EndSign1Test() {
         MyRange range = new MyRange();
-        boolean actualResult = range.isก้ามปูปิด("[1,5]");
-        assertTrue("ต้องเป็นก้ามปูปิดนะ", actualResult);
+        boolean actualResult = range.FirstSign("[1,5]");
+        assertTrue("Must True", actualResult);
     }
 
     @Test @Ignore
     public void
-    ตรวจสอบว่าเป็น_วงเล็บปิด() {
+    EndSign2Test() {
         MyRange range = new MyRange();
-        boolean actualResult = range.isก้ามปูปิด("[1,5)");
-        assertFalse("ต้องเป็นวงเล็บปิดนะ", actualResult);
+        boolean actualResult = range.FirstSign("[1,5)");
+        assertFalse("Must False", actualResult);
     }
 
     @Test @Ignore
     public void
-    หาตัวเลขสุดท้าย() {
+    EndNum1Test() {
         MyRange range = new MyRange();
         int actualResult = range.getLastNumber("[1,5]");
         assertEquals(5, actualResult);
@@ -73,7 +73,7 @@ public class RangeTest {
 
     @Test @Ignore
     public void
-    หาตัวเลขสุดท้าย2() {
+    EndNum2Test() {
         MyRange range = new MyRange();
         int actualResult = range.getLastNumber("[1,5)");
         assertEquals(4, actualResult);

@@ -7,15 +7,11 @@ public class MyRange {
         return 0;
     }
 
-    public boolean isก้ามปูปิด(String input) {
-        return false;
+    public boolean FirstSign(String input) {
+        return input.startsWith("[");
     }
 
     public int getFirstNumber(String input) {
         return 0;
-    }
-
-    public boolean isก้ามปูเปิด(String input) {
-        return false;
     }
 }
