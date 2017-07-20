@@ -1,8 +1,8 @@
 public class FizzBuzz {
     public String say(int input) {
-        if(input==1){
-            return "1";
+        if(input!=3){
+            return String.valueOf(input);
         } else
-            return "2";
+            return "Fizz";
     }
 }
