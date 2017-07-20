@@ -71,7 +71,7 @@ public class RangeTest {
         assertEquals(5, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     EndNum2Test() {
         MyRange range = new MyRange();

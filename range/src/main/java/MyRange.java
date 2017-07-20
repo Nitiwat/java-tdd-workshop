@@ -4,7 +4,10 @@ public class MyRange {
     }
 
     public int getLastNumber(String input) {
-        return Character.getNumericValue(input.charAt(3));
+        if (EndSign(input)) {
+            return Character.getNumericValue(input.charAt(3));
+        } else
+            return Character.getNumericValue((input.charAt(3)))-1;
     }
 
     public boolean EndSign(String input) {
