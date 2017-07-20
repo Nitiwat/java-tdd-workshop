@@ -7,6 +7,10 @@ public class MyRange {
         return 0;
     }
 
+    public boolean EndSign(String input) {
+        return input.endsWith("]");
+    }
+
     public boolean FirstSign(String input) {
         return input.startsWith("[");
     }

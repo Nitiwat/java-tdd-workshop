@@ -47,11 +47,11 @@ public class RangeTest {
         assertEquals(2, actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void
     EndSign1Test() {
         MyRange range = new MyRange();
-        boolean actualResult = range.FirstSign("[1,5]");
+        boolean actualResult = range.EndSign("[1,5]");
         assertTrue("Must True", actualResult);
     }
 
@@ -59,7 +59,7 @@ public class RangeTest {
     public void
     EndSign2Test() {
         MyRange range = new MyRange();
-        boolean actualResult = range.FirstSign("[1,5)");
+        boolean actualResult = range.EndSign("[1,5)");
         assertFalse("Must False", actualResult);
     }
 
