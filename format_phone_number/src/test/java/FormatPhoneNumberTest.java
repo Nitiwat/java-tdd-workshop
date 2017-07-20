@@ -1,4 +1,3 @@
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -41,7 +40,7 @@ public class FormatPhoneNumberTest {
         assertEquals("004-448-555-583-61", actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void oddPhoneNumberOnlyLast2Group() {
         FormatPhoneNumber formatPhoneNumber = new FormatPhoneNumber();
         String actualResult = formatPhoneNumber.solution("0 - 22 1985--324");
