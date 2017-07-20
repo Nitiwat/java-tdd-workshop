@@ -1,6 +1,10 @@
 public class MyRange {
     public String of(String input) {
-        return null;
+        String Result = "";
+        for(int i =getFirstNumber(input);i<=getLastNumber(input);i++){
+            Result += i;
+        }
+        return Result;
     }
 
     public int getLastNumber(String input) {
