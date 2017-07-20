@@ -34,7 +34,7 @@ public class FormatPhoneNumberTest {
         assertEquals("555-372-654", actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void oddPhoneNumberOnlyLastGroup() {
         FormatPhoneNumber formatPhoneNumber = new FormatPhoneNumber();
         String actualResult = formatPhoneNumber.solution("004-448-555-583-61");
