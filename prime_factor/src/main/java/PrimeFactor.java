@@ -13,7 +13,8 @@ public class PrimeFactor {
                 number = number / 3;
             }else
                 return list;
-        }while (number<=3);
+        }while (number>0);
+
         return list;
     }
 }
